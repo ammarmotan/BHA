@@ -1,3 +1,17 @@
+// nav //
+$(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 10) {
+        $("nav").css("background-color", "black");
+        $(".nav-link").css("color", "#fff");
+        $(".nav").css("position", "static");
+      }
+      else {
+        $("nav ").css("background-color", "transparent");
+        $(".nav-link").css("color", "#fff");
+      }
+    });
+  });
 // search//
     var pages = [
       { name: "muslim blog", url: "Muslim Page.html" },
