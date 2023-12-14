@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<!-- Font Awesome -->
+    <!-- Font Awesome -->
 <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
 />
 <!-- Google Fonts -->
 <link
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-  rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
 />
 <!-- MDB -->
 <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
-  rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+rel="stylesheet"
 />
-<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact.css">
+</head>
 <body>
+  <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="logo1.png" alt="" style="width: 150px;height: 70px;"></a>
@@ -60,9 +62,6 @@
                 <a class="nav-link " href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Services</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link " href="#">Contact Us</a>
               </li>
             </ul>
@@ -72,173 +71,203 @@
             </form>
           </div>
         </div>
-      </nav><br><br><br><br>
+      </nav><br><br><br>
+      <!-- navbar -->
+
+      <!-- banner -->
+      <div class="ban">
+        <img src="images/contact us.webp" alt="">
+      </div>
+      <!-- banner -->
+
+      <!-- icons -->
+      <div class="icon">
+        <center>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <i class="fa fa-at" aria-hidden="true"></i>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </center>
+      </div>
+      <!-- icons -->
+
+      <!-- content -->
+      <p class="par">This is our Contact Us Page <br> Contact Us via Mail , Phone  Or giving Company Location.</p><br><br>
+      <!-- content -->
 
       <!-- form -->
       <div class="form">
-        <h2>Contact Form</h2><br>
-        <div class="row g-3">
-          <div class="col">
-            <label for="fname" style="padding-left: 20px; font-size: 20px; font-weight: 500;">First Name:</label>
-            <input id="fname-input" onclick="fnamevalid()" type="text" class="form-control" placeholder="First name..." autocomplete="on">
-            <span id="fname-error" style="color: red; padding-left: 22px;"></span>
+        <div class="container">
+          <div class="content">
+            <div class="left-side">
+              <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Address</div>
+                <div class="text-one">Surkhet, NP12</div>
+                <div class="text-two">Birendranagar 06</div>
+              </div>
+              <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Phone</div>
+                <div class="text-one">+0098 9893 5647</div>
+                <div class="text-two">+0096 3434 5678</div>
+              </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">codinglab@gmail.com</div>
+                <div class="text-two">info.codinglab@gmail.com</div>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="topic-text">Send us a message</div>
+              <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+            <form action="#">
+              <div class="input-box">
+                <input type="text" placeholder="Enter your name" id="fname-input" onclick="fnamevalid()" autocomplete="on">
+                <span id="fname-error" style="color: red;"></span>
+              </div><br>
+              <div class="input-box">
+                <input type="text" placeholder="Enter your email" id="email-input" onclick="emailvalid()" autocomplete="on">
+                <span id="email-error" style="color: red;"></span>
+              </div><br>
+              <div class="input-box message-box">
+                <input type="text" placeholder="Write a message">
+              </div>
+              <div class="button">
+                <input type="button" value="Send Now" >
+              </div>
+            </form>
           </div>
-          <div class="col">
-            <label for="fname" style="padding-left: 20px; font-size: 20px; font-weight: 500;">Last Name:</label>
-            <input id="lname-input" onclick="lnamevalid()" type="text" class="form-control" placeholder="Last name..." autocomplete="on">
-            <span id="lname-error" style="color: red; padding-left: 30px;"></span>
           </div>
-        </div><br><br>
-        <div class="row g-3">
-          <div class="col">
-            <label for="fname" style="padding-left: 20px; font-size: 20px; font-weight: 500;">Email:</label>
-            <input id="email-input" onclick="mailvalid()" type="email" class="form-control" placeholder="Email..." autocomplete="on">
-            <span id="email-error" style="color: red; padding-left: 22px;"></span>
-          </div>
-          <div class="col">
-            <label for="fname" style="padding-left: 20px; font-size: 20px; font-weight: 500;">Phone:</label>
-            <input id="phone-input" onclick="phonevalid()" type="number" class="form-control" placeholder="Phone..." autocomplete="on">
-            <span id="phone-error" style="color: red; padding-left: 30px;"></span>
-          </div>
-        </div><br><br>
-        <div class="mb-3" id="sms">
-          <label for="exampleFormControlTextarea1" class="form-label" style="padding-left: 40px; font-size: 20px; font-weight: 500;">Message</label>
-          <textarea class="form-control" onclick="msgvalid()" id="msg-input" rows="3" placeholder="Enter Message..."></textarea>
-          <span id="msg-error" style="color: red; padding-left: 30px;"></span>
-        </div><br>
-        <button class="btn" id="submitError" onclick="register();return formvalid()" type="submit">Submit</button><br><br>
-        <span id="subError" style="color: red; text-align: center;"></span>
-        <br><br>
+        </div>
       </div><br><br><br>
       <!-- form -->
-      <!-- Footer -->
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <!-- Left -->
-  
-      <!-- Right -->
-      <div>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-  
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Company name
-            </h6>
-            <p>
-              Here you can use rows and columns to organize your footer content. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Products
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Angular</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">React</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Vue</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Laravel</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Useful links
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Pricing</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Settings</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Orders</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Help</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              info@example.com
-            </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2021 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
 
-      <!-- MDB -->
+    <!-- Footer -->
+<footer class="text-center text-lg-start" style="background-color: #009999; color: #fff;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+          <img src="logo1.png" alt="" style="width: 220px;height: 150px;">
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">BHACLOTHING.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<!-- MDB -->
 <script
-type="text/javascript"
-src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
 ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
-</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+<script src="contact.js"></script>
+  </body>
 </html>
