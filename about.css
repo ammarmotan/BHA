@@ -1,0 +1,87 @@
+/* navbar */
+.nav-item::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #3366FF;
+    margin: auto;
+    display: block;
+  }
+
+  .nav-item:hover::after {
+    width: 100%;
+    transition: width 0.3s linear;
+  }
+
+  #customerNameEmail {
+    align-self: flex-start;
+    /* To align the name and email to the left */
+  }
+
+  .id {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .large-icon {
+    margin-left: 75px;
+    width: 40px;
+  }
+
+  .navbar {
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-link {
+    color: #000;
+    font-size: 19px;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .nav-link:hover{
+    color: #000;
+  }
+
+  .list-group p a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  .list-group p:hover {
+    text-decoration: none;
+  }
+   .dropdown-menu{
+    background-color: #666666;
+  } 
+  .dropdown-item{
+    color: #fff;
+  }
+  .dropdown-item:hover{
+    color: #fff;
+    background-color: #666666;
+  }
+  /* navbar */
+  
+  /* ban */
+  .ban{
+    height: 300px;
+    background-color:  #336666;
+  }
+  .content h2{
+    text-align: center;
+    padding-top: 150px;
+    font-size: 50px;
+    color:  #0066FF;
+  }
+  /* ban */
